@@ -1,0 +1,13 @@
+.userField {
+    border-radius: 50px;
+    width: 100%;
+}
+.fieldContainer {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+input{
+   font-size: 15px;
+}

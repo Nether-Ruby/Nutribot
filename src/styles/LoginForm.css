@@ -1,0 +1,43 @@
+.formSignUp {
+    width: 300px;
+    height: 350px;
+}
+.form{
+    width: 300px;
+    height: 250px;
+}
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.spacing {
+    position: relative;
+    top: 10px;
+    bottom: 10px;
+}
+
+.popUp {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    max-width: 80%; /* Ajusta el ancho máximo según sea necesario */
+    max-height: 80%; /* Ajusta la altura máxima según sea necesario */
+    z-index: 9999;
+  }
+  
+  .closeButton {
+    width: 10%;
+    height: 100%;
+    border-radius: 50px;
+    transition: 0.5s;
+    font-size: 15px;
+}
+.closeButton:hover {
+    color: red;
+  }

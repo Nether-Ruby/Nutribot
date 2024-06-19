@@ -1,0 +1,9 @@
+* {
+    z-index: 0;
+}
+.popUp {
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+}
+
