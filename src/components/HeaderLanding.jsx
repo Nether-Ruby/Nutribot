@@ -31,7 +31,6 @@ function HeaderLanding() {
     // Redirige a la página deseada después del inicio de sesión exitoso
     navigateTo('/dashboard');
   };
-
   return (
     <div className="header">
       <div className="leftContainer">

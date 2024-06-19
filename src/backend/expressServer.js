@@ -3,6 +3,7 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import dbconnect from "./dbConfig.js";
 import ModelUser from "./userSchema.js";
+import { PORT } from "../../configs.js";
 import bcrypt from "bcrypt";
 import generateAuthToken from "./generateAuthToken.js";
 
@@ -59,7 +60,7 @@ app.post("/Nutribot/Login", async (req, res) => {
       return res.status(400).send("Invalid email or password");
     }
     // Si las credenciales son válidas, genera un token de autenticación
-    const token = generateAuthToken(user._id);
+    const token = generateAuthToken(user._id, user.name, user.email);
 
     // Devuelve el token al cliente
     res.send({ token });
@@ -69,6 +70,6 @@ app.post("/Nutribot/Login", async (req, res) => {
   }
 });
 
-app.listen(5000, () => {
+app.listen(PORT, () => {
   console.log("Server is running on port 5000");
 });
