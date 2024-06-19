@@ -8,7 +8,7 @@ import NameField from "./nameField";
 
 function SignupForm({ onclose }) {
 
-  const [username, setUsername] = useState("");
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -16,20 +16,19 @@ function SignupForm({ onclose }) {
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
+    let formData = {};
 
     if (password !== confirmPassword) {
       alert("Passwords do not match");
       return;
     }
-
-    // Create an object with the form data
-    const formData = {
-      username,
-      email,
-      password,
-      confirmPassword,
-    };
-
+    else{
+      formData = {
+        name,
+        email,
+        password
+    }
+  }
     try {
       // Send a POST request to your backend
       const response = await fetch('http://localhost:5000/Nutribot/Users', {
@@ -43,6 +42,7 @@ function SignupForm({ onclose }) {
       if (response.ok) {
         // Handle successful response
         console.log('Signup successful');
+        alert("Registro exitoso");
         // Optionally close the popup
         onclose();
       } else {
@@ -68,7 +68,7 @@ function SignupForm({ onclose }) {
         </form>
         <form onSubmit={handleSubmit} className="formSignUp" method="POST">
           <div className="center spacing">
-            <NameField value={username} onChange={setUsername} />
+            <NameField value={name} onChange={setName} />
           </div>
           <br></br>
           <div className="center">

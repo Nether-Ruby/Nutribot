@@ -5,6 +5,11 @@ const { isEmail } = pkg;
 
 const userSchema = mongoose.Schema(
     {
+    name: {
+        type: String,
+        trim: true,
+        required: 'Se requiere un nombre'
+    },
     email: {
         type: String,
         trim: true,
@@ -14,11 +19,6 @@ const userSchema = mongoose.Schema(
         validate: [ isEmail, 'email invalido' ]
     },
     password: {
-        type: String,
-        trim: true,
-        required: 'Se requiere una contraseña'
-    },
-    name: {
         type: String,
         trim: true,
         required: 'Se requiere una contraseña'

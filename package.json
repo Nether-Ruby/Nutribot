@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "Start": "npm-run-all --parallel Start-Server dev",
+    "start": "npm-run-all --parallel Start-Server dev",
     "Start-Server": "node ./src/backend/expressServer.js",
     "dev": "vite",
     "build": "vite build",
@@ -12,12 +12,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.4.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.1",
     "validator": "^13.12.0"
   },
   "devDependencies": {

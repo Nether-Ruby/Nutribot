@@ -5,8 +5,8 @@ function UserField({ value, onChange }) {
   return (
     <div className="fieldContainer">
       <input
-        type="text"
-        placeholder="Username"
+        type="email"
+        placeholder="Email"
         className="userField"
         value={value}
         onChange={(e) => onChange(e.target.value)}
