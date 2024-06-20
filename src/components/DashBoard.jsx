@@ -1,10 +1,12 @@
 import React from "react";
+import HeaderDash from "./HeaderDash";
+import Footer from "./Footer";
 
 function Dashboard() {
   return (
     <div>
-      <h1>Dashboard</h1>
-      <p>Bienvenido al dashboard</p>
+     <HeaderDash/>
+     <Footer/>
     </div>
   );
 }
