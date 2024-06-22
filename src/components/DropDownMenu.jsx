@@ -19,7 +19,7 @@ const DropDownMenu = () => {
           <li><a href="#home">Perfíl</a></li>
           <li><a href="#about">Configuración</a></li>
           <li><a href="#contact">Contactanos</a></li>
-          <li><a href="#services">Contactanos</a></li>
+          <li><a href="#services">Cerrar Sesión</a></li>
         </ul>
       )}
     </div>
