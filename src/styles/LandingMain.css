@@ -16,4 +16,5 @@
     position: absolute;
     top: 50vh;
     width: 50vw;
+    z-index: -1;
 }

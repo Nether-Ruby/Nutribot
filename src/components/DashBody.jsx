@@ -5,6 +5,7 @@ import RightSide from './RightSide';
 import Search from './Search';
 import Consulta from './Consulta';
 
+
 function DashBody() {
     const [rightContent, setRightContent] = useState(null);
 
