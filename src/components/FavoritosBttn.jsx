@@ -1,11 +1,7 @@
 import React from "react";
-import "../styles/DashBody.css"
+import "../styles/DashBody.css";
 
-function FavoritosBttn() {
-    return (
-        <div>
-            <button className="button">Recetas Favoritas</button>
-        </div>
-    );
-}
+const FavoritosBttn = ({ onClick }) => {
+  return <button className="button" onClick={onClick}>Recetas Favoritas</button>;
+};
 export default FavoritosBttn;

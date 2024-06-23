@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { jwtVerify } from 'jose'; // Importa la función jwtVerify desde jose.js
+import Perfil from './Perfil.jsx';
 import config from '../../configs.js';
 import '../styles/DropDownMenu.css';
 const { SECRET_JWT_KEY } = config;
@@ -9,8 +10,12 @@ const secretKeyArray = new TextEncoder().encode(SECRET_JWT_KEY);
 
 
 const DropDownMenu = () => {
+  const [showPopupProfile, setShowPopupProfile] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
+  const TOGGLEPOPUPPROFILE = () => {
+    setShowPopupProfile(!showPopupProfile);
+  };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -47,9 +52,8 @@ const DropDownMenu = () => {
       </button>
       {isOpen && (
         <ul className="dropdown-menu">
-          <li><a href="#perfil">Perfil</a></li>
-          <li><a href="#configuracion">Configuración</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a onClick={TOGGLEPOPUPPROFILE}>Perfil</a></li>
+          {showPopupProfile && <Perfil onclose={TOGGLEPOPUPPROFILE} />}
           <li><a onClick={handleLogout}>Cerrar Sesión</a></li>
         </ul>
       )}
