@@ -5,6 +5,7 @@ import RightSide from './RightSide';
 import Search from './Search';
 import Consulta from './Consulta';
 import FavoriteList from './FavoriteList';
+import Favoritos_Planes from './Favoritos_Planes';
 
 
 function DashBody() {
@@ -20,6 +21,9 @@ function DashBody() {
     const handleShowFavoritos = () => {
         setRightContent(<FavoriteList />);
     };
+    const handleShowPlanes = () => {
+        setRightContent(<Favoritos_Planes />)
+    }
 
     return (
         <div className="dash-body">
@@ -27,6 +31,7 @@ function DashBody() {
                 onShowConsulta={handleShowConsulta}
                 onShowSearch={handleShowSearch}
                 onShowFavoritos={handleShowFavoritos}
+                onShowPlanes={handleShowPlanes}
             />
             <RightSide content={rightContent} />
         </div>

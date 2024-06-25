@@ -7,6 +7,7 @@ import bcrypt from 'bcryptjs';
 import generateAuthToken from "./generateAuthToken.js";
 import config from "../../configs.js";
 import RecipeModel from "./recipeSchema.js";
+import MealModel from "./mealModel.js";
 const { PORT} = config;
 
 
@@ -104,6 +105,33 @@ app.post("/Nutribot/Recipes", async (req, res) => {
   }
 });
 
+//AGREGAR MEAL PLAN A FAVORITOS
+
+app.post('/Nutribot/Mealplan', async (req, res) => {
+  try {
+    const { userId, date, targetCalories, diet, exclude, meals } = req.body;
+
+    // Crear un nuevo documento de MealPlan
+    const newMealPlan = new MealModel({
+      userId,
+      date,
+      targetCalories,
+      diet,
+      exclude,
+      meals
+    });
+
+    // Guardar el documento en la base de datos
+    const savedMealPlan = await newMealPlan.save();
+
+    // Enviar la respuesta con el meal plan guardado
+    res.status(201).json(savedMealPlan);
+  } catch (error) {
+    console.error('Error saving meal plan:', error);
+    res.status(500).json({ message: 'Error saving meal plan', error });
+  }
+});
+
 //MOSTRAR FAVORITOS
 
 app.get('/Nutribot/Recipes/:field/:value', async (req, res) => {
@@ -122,6 +150,29 @@ app.get('/Nutribot/Recipes/:field/:value', async (req, res) => {
   } catch (error) {
     console.error('Error al obtener receta por campo específico:', error);
     res.status(500).json({ error: 'Error interno del servidor' });
+  }
+});
+
+//MOSTRAR PLANES FAVORITOS
+
+app.get('/Nutribot/MealPlan/:field/:value', async (req, res) => {
+  try {
+    const field = req.params.field;
+    const value = req.params.value;
+    console.log(field);
+    console.log(value);
+
+    // Realiza la búsqueda por el campo específico
+    const mealPlans = await MealModel.find({ [field]: value });
+
+    if (!mealPlans) {
+      return res.status(404).json({ error: 'Meal plans not found' });
+    }
+
+    res.status(200).json(mealPlans);
+  } catch (error) {
+    console.error('Error fetching meal plans by specific field:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
   }
 });
 
@@ -176,6 +227,24 @@ app.delete('/Nutribot/Recipes/:recipeId', async (req, res) => {
     res.status(200).json({ message: 'Receta eliminada correctamente.' });
   } catch (error) {
     console.error('Error eliminando la receta:', error);
+    res.status(500).json({ error: 'Error interno del servidor' });
+  }
+});
+
+app.delete('/Nutribot/MealPlan/:mealPlanId', async (req, res) => {
+  try {
+    const mealPlanId = req.params.mealPlanId;
+
+    // Elimina la receta de la base de datos utilizando el método findByIdAndDelete de Mongoose
+    const deletedPlan = await MealModel.findByIdAndDelete(mealPlanId);
+
+    if (!deletedPlan) {
+      return res.status(404).json({ error: 'No se encontró el plan con el ID proporcionado.' });
+    }
+
+    res.status(200).json({ message: 'Plan eliminado correctamente.' });
+  } catch (error) {
+    console.error('Error eliminando el plan:', error);
     res.status(500).json({ error: 'Error interno del servidor' });
   }
 });

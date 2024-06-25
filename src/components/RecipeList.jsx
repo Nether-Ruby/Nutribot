@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import { jwtVerify } from "jose"; // Importa la función jwtVerify desde jose.js
 import config from "../../configs.js";
+import "../styles/search.css"
 const { SECRET_JWT_KEY } = config;
 const secretKeyArray = new TextEncoder().encode(SECRET_JWT_KEY);
 
@@ -73,7 +74,7 @@ const RecipeList = ({ recipes }) => {
               ))}
             </div>
           )}
-          <button type="button" onClick={() => handleSave(recipe)}>
+          <button type="button" className="search-button" onClick={() => handleSave(recipe)}>
             Guardar
           </button>
         </div>

@@ -1,0 +1,78 @@
+#right-side-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 77vh;
+
+  }
+  
+  #main-heading {
+    color: mediumseagreen;
+    border-bottom: 2px solid mediumseagreen;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .meal-plan-heading {
+    color: #333;
+  }
+  
+  .sub-heading {
+    color: mediumseagreen;
+  }
+  
+  .text {
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .link {
+    color: mediumseagreen;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  .button {
+    background-color: mediumseagreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #3cb371;
+  }
+  
+  #meal-plan {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #meal {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+  }
+  
+  .ordered-list {
+    padding-left: 20px;
+  }
+  
+  .list-item {
+    margin-bottom: 5px;
+  }

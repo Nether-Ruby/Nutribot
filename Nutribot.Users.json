@@ -1,0 +1,135 @@
+[{
+  "_id": {
+    "$oid": "6673113bc02dd902d1463757"
+  },
+  "name": "Tomas",
+  "email": "ejemplo@gmail.com",
+  "password": "12345",
+  "createdAt": {
+    "$date": "2024-06-19T17:11:23.764Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-19T17:11:23.764Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667311afc02dd902d1463759"
+  },
+  "name": "Gabriel",
+  "email": "ejemplo2@gmail.com",
+  "password": "12345",
+  "createdAt": {
+    "$date": "2024-06-19T17:13:19.320Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-19T17:13:19.320Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66732fc23a8d79bd3ffe579e"
+  },
+  "name": "hash",
+  "email": "ejemplo@hashed.com",
+  "password": "123",
+  "createdAt": {
+    "$date": "2024-06-19T19:21:38.939Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-19T19:21:38.939Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667331843a8d79bd3ffe57a1"
+  },
+  "name": "hola",
+  "email": "hola@gmail.com",
+  "password": "1",
+  "createdAt": {
+    "$date": "2024-06-19T19:29:08.959Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-19T19:29:08.959Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6673322d3a8d79bd3ffe57a3"
+  },
+  "name": "hola2",
+  "email": "hola2@gmail.com",
+  "password": "123",
+  "createdAt": {
+    "$date": "2024-06-19T19:31:57.929Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-19T19:31:57.929Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667332ef3a8d79bd3ffe57a5"
+  },
+  "name": "a",
+  "email": "1@gmail.com",
+  "password": "1",
+  "createdAt": {
+    "$date": "2024-06-19T19:35:11.940Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-19T19:35:11.940Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667333593a8d79bd3ffe57a7"
+  },
+  "name": "a",
+  "email": "a@gmail.com",
+  "password": "1",
+  "createdAt": {
+    "$date": "2024-06-19T19:36:57.247Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-19T19:36:57.247Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66733407e0f3f2c35ecae047"
+  },
+  "name": "b",
+  "email": "b@gmail.com",
+  "password": "$2b$10$YKjpkeQko2vSNKEAMt97keO1ZqJoswmZU/ebDUH.Ok6xuu83aFqQW",
+  "createdAt": {
+    "$date": "2024-06-19T19:39:51.482Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-19T19:39:51.482Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66774c7a345357f35045e83b"
+  },
+  "name": "Gabriel",
+  "email": "gabriel@gmail.com",
+  "password": "$2a$10$2Ut46hngPxF92y9hQp2HOuaDHR.RgXJK6T8NxdnRCcttOr7kw0CZ6",
+  "createdAt": {
+    "$date": "2024-06-22T22:13:14.312Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-23T02:49:56.598Z"
+  },
+  "__v": 0
+}]

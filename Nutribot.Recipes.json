@@ -1,0 +1,240 @@
+[{
+  "_id": {
+    "$oid": "667a16ed351e13ad92d4f3fc"
+  },
+  "userId": "66774c7a345357f35045e83b",
+  "title": "Sweet-N-Smoky Salmon With Ginger Mahogany Rice",
+  "usedIngredients": [
+    {
+      "id": 20444,
+      "name": "mahogany rice",
+      "amount": 1,
+      "unit": "cup",
+      "_id": {
+        "$oid": "667a16ed351e13ad92d4f3fd"
+      }
+    },
+    {
+      "id": 10115076,
+      "name": "salmon",
+      "amount": 4,
+      "unit": "fillet",
+      "_id": {
+        "$oid": "667a16ed351e13ad92d4f3fe"
+      }
+    }
+  ],
+  "missedIngredients": [
+    {
+      "id": 6172,
+      "name": "chicken stock",
+      "amount": 2,
+      "unit": "cups",
+      "_id": {
+        "$oid": "667a16ed351e13ad92d4f3ff"
+      }
+    },
+    {
+      "id": 11216,
+      "name": "ginger",
+      "amount": 3,
+      "unit": "inches",
+      "_id": {
+        "$oid": "667a16ed351e13ad92d4f400"
+      }
+    },
+    {
+      "id": 93627,
+      "name": "liquid smoke",
+      "amount": 1.5,
+      "unit": "teaspoons",
+      "_id": {
+        "$oid": "667a16ed351e13ad92d4f401"
+      }
+    },
+    {
+      "id": 16124,
+      "name": "soy sauce",
+      "amount": 2,
+      "unit": "tablespoons",
+      "_id": {
+        "$oid": "667a16ed351e13ad92d4f402"
+      }
+    }
+  ],
+  "instructions": [
+    {
+      "steps": [
+        {
+          "number": 1,
+          "step": "Place the salmon in bowl, or large zip bag with soy sauce, liquid smoke and brown sugar.",
+          "_id": {
+            "$oid": "667a16ed351e13ad92d4f404"
+          }
+        },
+        {
+          "number": 2,
+          "step": "Let it marinate for at least 1 hourbut you could marinate over night! When ready to use, preheat the grill or an iron skillet to high heat.In a medium sauce pan, over high heat, toast the rice in 1 Tb. of oil for 2 minutes. Then add the chicken stock and a large pinch of salt and pepper. Bring to a boil. Lower the heat to a simmer and cover. Simmer the rice for about 40 minutesor as directed on the package.Meanwhile, peel the ginger and cut into thin strips. (julienne)",
+          "_id": {
+            "$oid": "667a16ed351e13ad92d4f405"
+          }
+        },
+        {
+          "number": 3,
+          "step": "Heat a small skillet over medium-high.",
+          "_id": {
+            "$oid": "667a16ed351e13ad92d4f406"
+          }
+        },
+        {
+          "number": 4,
+          "step": "Add 1 Tb. of oil to the skillet. When the oil is hot, drop the ginger in and pan-fry for 1-2 minutes, moving with a spatula, until they are light brown.",
+          "_id": {
+            "$oid": "667a16ed351e13ad92d4f407"
+          }
+        },
+        {
+          "number": 5,
+          "step": "Remove from the pan and drain on a paper towel.",
+          "_id": {
+            "$oid": "667a16ed351e13ad92d4f408"
+          }
+        },
+        {
+          "number": 6,
+          "step": "Sprinkle with salt.While the rice is cooking, CAREFULLY brush the grill with vegetable oil. (You could also use grill spray.) Pepper the salmon and place it on the grill, top-side-down. Cook 3 minutes.Flip, then carefully sprinkle the tops with a little extra brown sugar and grill for another 3-5 minutesuntil just cooked through.Cover with foil and let them rest for 5-10 minutes before serving.",
+          "_id": {
+            "$oid": "667a16ed351e13ad92d4f409"
+          }
+        }
+      ],
+      "_id": {
+        "$oid": "667a16ed351e13ad92d4f403"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-06-25T01:01:33.892Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-25T01:01:33.892Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667a7f5b27f834b9ef1649ad"
+  },
+  "userId": "66774c7a345357f35045e83b",
+  "title": "The Scotch Egg",
+  "usedIngredients": [
+    {
+      "id": 1007063,
+      "name": "pork sausage",
+      "amount": 16,
+      "unit": "oz",
+      "_id": {
+        "$oid": "667a7f5b27f834b9ef1649ae"
+      }
+    }
+  ],
+  "missedIngredients": [
+    {
+      "id": 1123,
+      "name": "eggs",
+      "amount": 6,
+      "unit": "large",
+      "_id": {
+        "$oid": "667a7f5b27f834b9ef1649af"
+      }
+    },
+    {
+      "id": 10018079,
+      "name": "panko breadcrumbs",
+      "amount": 2,
+      "unit": "cup",
+      "_id": {
+        "$oid": "667a7f5b27f834b9ef1649b0"
+      }
+    }
+  ],
+  "instructions": [
+    {
+      "steps": [
+        {
+          "number": 1,
+          "step": "Hard boil your eggs.  To get perfectly hard boiled eggs, once the water is boiling, add your eggs and set your timer for 9 1/2 minutes.  As soon as your timer goes off, remove the eggs and put them in a bath of cold water.",
+          "_id": {
+            "$oid": "667a7f5b27f834b9ef1649b2"
+          }
+        },
+        {
+          "number": 2,
+          "step": "Once your eggs are cooked and shells are removed, set up an assembly line with the beaten eggs, sausage meat and bread crumbs.",
+          "_id": {
+            "$oid": "667a7f5b27f834b9ef1649b3"
+          }
+        },
+        {
+          "number": 3,
+          "step": "Now you'll want to take about a 1/4 cup of the ground sausage, form a disk and begin to shape it around the hardboiled egg.",
+          "_id": {
+            "$oid": "667a7f5b27f834b9ef1649b4"
+          }
+        },
+        {
+          "number": 4,
+          "step": "Take the sausage-covered egg and dip it in the beaten egg.",
+          "_id": {
+            "$oid": "667a7f5b27f834b9ef1649b5"
+          }
+        },
+        {
+          "number": 5,
+          "step": "Roll the sausage-covered egg in the bread crumbs until it is generously coated.",
+          "_id": {
+            "$oid": "667a7f5b27f834b9ef1649b6"
+          }
+        },
+        {
+          "number": 6,
+          "step": "The final step is to fry those eggs up!  Once all of your eggs are coated in the bread crumbs, heat up your oil over medium high heat.  You'll know your oil is at the right temperature when you drop a few bread crumbs in the pot and it begins to sizzle.  Take care not to add the eggs to the oil to early - if the oil isn't hot enough it will just saturate the bread crumbs and it won't be as tasty.",
+          "_id": {
+            "$oid": "667a7f5b27f834b9ef1649b7"
+          }
+        },
+        {
+          "number": 7,
+          "step": "Drop two eggs at a time in the hot oil and cook them until very golden brown, about 6-7 minutes.  Make sure you give the eggs enough time in the oil so the sausage fully cooks.",
+          "_id": {
+            "$oid": "667a7f5b27f834b9ef1649b8"
+          }
+        },
+        {
+          "number": 8,
+          "step": "Remove the fried eggs from the oil and place on a plate with paper towels to remove the excess oil.",
+          "_id": {
+            "$oid": "667a7f5b27f834b9ef1649b9"
+          }
+        },
+        {
+          "number": 9,
+          "step": "Cut the eggs in half or quarters and serve while hot.",
+          "_id": {
+            "$oid": "667a7f5b27f834b9ef1649ba"
+          }
+        }
+      ],
+      "_id": {
+        "$oid": "667a7f5b27f834b9ef1649b1"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-06-25T08:27:07.025Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-25T08:27:07.025Z"
+  },
+  "__v": 0
+}]

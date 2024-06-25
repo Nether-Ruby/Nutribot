@@ -1,38 +1,46 @@
 .dash-body {
-    display: flex;
-    height: fit-content;
-    flex-grow: 1; /* Permite que DashBody ocupe el espacio restante entre header y footer */
-    margin-top: 10vh; /* Altura del header */
-    margin-bottom: 5vh; /* Altura del footer */
-  }
-  
-  .left-side, .right-side {
-    
-    padding: 20px;
-  }
-  
-  .left-side {
-    background-color: #f0f0f0; /* Color de fondo para el lado izquierdo */
-    width: 20%;
-  }
-  
-  .right-side {
-    background-color: #ffffff; /* Color de fondo para el lado derecho */
-    width: 80%;
-  }
+  display: flex;
+  height: fit-content;
+  flex-grow: 1; /* Permite que DashBody ocupe el espacio restante entre header y footer */
+  margin-top: 10vh; /* Altura del header */
+  margin-bottom: 5vh; /* Altura del footer */
+}
 
-  .left-bttn {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    background-color: #2cb16e;
-    color: white;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
+.left-side,
+.right-side {
+  padding: 20px;
+}
+/*LEFT*/
+.left-side {
+  background-color: #f0f0f0; /* Color de fondo para el lado izquierdo */
+  width: 25%;
+}
+.left-bttn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.no-margins{
+  margin: 0px;
+}
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #2cb16e;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+/*RIGHT*/
+.right-side {
+  background-color: #a8cc8f; /* Color de fondo para el lado derecho */
+  width: 90%;
+}
+.right-side-container {
+  height: 80vh;
+  overflow-y: scroll; /* Habilita el desplazamiento vertical */
+  overflow-x: hidden; /* Deshabilita el desplazamiento horizontal */
+  display: flex;
+}

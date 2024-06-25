@@ -4,15 +4,15 @@ import { jwtVerify } from 'jose'; // Importa la función jwtVerify desde jose.js
 import Perfil from './Perfil.jsx';
 import config from '../../configs.js';
 import '../styles/DropDownMenu.css';
+
 const { SECRET_JWT_KEY } = config;
-
 const secretKeyArray = new TextEncoder().encode(SECRET_JWT_KEY);
-
 
 const DropDownMenu = () => {
   const [showPopupProfile, setShowPopupProfile] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
+
   const TOGGLEPOPUPPROFILE = () => {
     setShowPopupProfile(!showPopupProfile);
   };

@@ -1,11 +1,11 @@
 import React from 'react';
 
-const ConsultaBttn = ({ onClick }) => {
+const SearchBttn = ({ onClick }) => {
     return (
         <button className="button" onClick={onClick}>
-            Planificador de comidas
+            Menús guardados
         </button>
     );
 };
 
-export default ConsultaBttn;
+export default SearchBttn;
