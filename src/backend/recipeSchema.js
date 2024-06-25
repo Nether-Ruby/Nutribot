@@ -1,32 +1,64 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
-const recipeSchema = new mongoose.Schema({
+const { Schema } = mongoose;
+
+// Sub-schema para los ingredientes
+const IngredientSchema = new Schema({
+  id: {
+    type: Number,
+    required: true,
+  },
+  name: {
+    type: String,
+    required: true,
+  },
+  amount: {
+    type: Number,
+    required: true,
+  },
+  unit: {
+    type: String,
+    required: false,
+  },
+});
+
+// Sub-schema para los pasos de las instrucciones
+const StepSchema = new Schema({
+  number: {
+    type: Number,
+    required: true,
+  },
+  step: {
+    type: String,
+    required: true,
+  },
+});
+
+// Sub-schema para las instrucciones analizadas
+const InstructionSchema = new Schema({
+  name: {
+    type: String,
+    required: false,
+  },
+  steps: [StepSchema],
+});
+
+// Schema principal para las recetas con instrucciones
+const RecipeWithInstructionsSchema = new Schema({
   userId: {
     type: String,
-    required: true
+    required: true,
   },
   title: {
     type: String,
-    required: true
+    required: true,
   },
-  usedIngredients: [{
-    id: String,
-    name: String,
-    amount: Number,
-    unit: String
-  }],
-  missedIngredients: [{
-    id: String,
-    name: String,
-    amount: Number,
-    unit: String
-  }],
-  createdAt: {
-    type: Date,
-    default: Date.now
-  }
-});
+  usedIngredients: [IngredientSchema],
+  missedIngredients: [IngredientSchema],
+  instructions: [InstructionSchema],
+}, { timestamps: true });
 
-const RecipeModel = mongoose.model('Recipe', recipeSchema, 'Recipes');
+// Crear el modelo
+const RecipeModel = mongoose.model('Recipe', RecipeWithInstructionsSchema, 'Recipes');
 
 export default RecipeModel;

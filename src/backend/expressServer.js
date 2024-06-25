@@ -80,21 +80,25 @@ app.post("/Nutribot/Login", async (req, res) => {
 
 app.post("/Nutribot/Recipes", async (req, res) => {
   try {
-    // Crear una nueva instancia del modelo Recipe con los datos enviados en la solicitud
     const newRecipe = new RecipeModel({
       userId: req.body.userId,
       title: req.body.title,
       usedIngredients: req.body.usedIngredients,
-      missedIngredients: req.body.missedIngredients
+      missedIngredients: req.body.missedIngredients,
+      instructions: req.body.instructions.map(instruction => ({
+        name: instruction.name,
+        steps: instruction.steps.map(step => ({
+          number: step.number,
+          step: step.step,
+        })),
+      })),
     });
 
-    // Guardar la receta en la base de datos
-    const savedRecipe = await newRecipe.save();
+    console.log('Saving recipe:', newRecipe); // Log the recipe data
 
-    // Enviar la receta guardada como respuesta
+    const savedRecipe = await newRecipe.save();
     res.status(201).json(savedRecipe);
   } catch (error) {
-    // Manejar errores
     console.error('Error saving recipe:', error);
     res.status(500).json({ error: 'Internal Server Error' });
   }
