@@ -1,4 +1,4 @@
-.background{
+.background {
     background-image: url(../images/landingBg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -6,8 +6,9 @@
     width: 100vw;
     display: flex;
     justify-content: center;
-}
-.text{
+  }
+  
+  .text {
     font-size: 30px;
     color: white;
     background-color: black;
@@ -16,6 +17,52 @@
     position: absolute;
     top: 50vh;
     width: 50vw;
-    user-select: none;
     z-index: -1;
-}
+  }
+  
+  /* Media Queries */
+  
+  /* Extra Small Devices (max-width: 575px) */
+  @media (max-width: 575px) {
+    .text {
+      font-size: 18px;
+      width: 90vw;
+      top: 45vh;
+    }
+  }
+  
+  /* Small Devices (min-width: 576px and max-width: 767px) */
+  @media (min-width: 576px) and (max-width: 767px) {
+    .text {
+      font-size: 20px;
+      width: 80vw;
+      top: 45vh;
+    }
+  }
+  
+  /* Medium Devices (min-width: 768px and max-width: 991px) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .text {
+      font-size: 24px;
+      width: 70vw;
+      top: 48vh;
+    }
+  }
+  
+  /* Large Devices (min-width: 992px and max-width: 1199px) */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .text {
+      font-size: 26px;
+      width: 60vw;
+      top: 49vh;
+    }
+  }
+  
+  /* Extra Large Devices (min-width: 1200px) */
+  @media (min-width: 1200px) {
+    .text {
+      font-size: 30px;
+      width: 50vw;
+      top: 50vh;
+    }
+  }

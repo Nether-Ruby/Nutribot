@@ -23,7 +23,7 @@ const safetySettings = [
 ];
 
 const generationConfig = {
-    maxOutputTokens: 500,  // Aumentar el límite de tokens
+    maxOutputTokens: 1000,  // Aumentar el límite de tokens
     temperature: 0,  // Ajustar la temperatura para diversidad en las respuestas
     topP: 0.9,  // Ajustar topP para mayor diversidad
     topK: 10,  // Ajustar topK para mayor diversidad
