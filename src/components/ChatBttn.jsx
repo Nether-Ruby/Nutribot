@@ -1,11 +1,11 @@
 import React from "react";
 import "../styles/DashBody.css"
 
-function ChatBttn() {
+const ChatBttn = ({ onClick }) => {
     return (
-        <div>
-            <button className="button">Chatbot</button>
-        </div>
+        <button className="button" onClick={onClick}>
+            Chatbot
+        </button>
     );
-}
+};
 export default ChatBttn;

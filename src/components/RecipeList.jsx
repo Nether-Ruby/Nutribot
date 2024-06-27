@@ -28,6 +28,7 @@ const RecipeList = ({ recipes }) => {
           recipe
         );
         console.log("Recipe saved successfully:", response.data);
+        alert("Receta Guardada");
       } else {
         console.warn("No se encontró un token en el localStorage.");
       }

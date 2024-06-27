@@ -41,6 +41,7 @@ const FavoriteList = () => {
       if (response.status === 200) {
         const updatedRecipes = recipes.filter((recipe) => recipe._id !== recipeId);
         setRecipes(updatedRecipes);
+        alert("La receta ha sido eliminada")
       }
     } catch (error) {
       console.error("Error eliminando la receta:", error);

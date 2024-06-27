@@ -28,7 +28,7 @@
     padding: 20px;
     max-width: 80%; /* Ajusta el ancho máximo según sea necesario */
     max-height: 80%; /* Ajusta la altura máxima según sea necesario */
-    z-index: 9999;
+    z-index: 1;
   }
   
   .closeButton {

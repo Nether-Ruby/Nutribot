@@ -6,6 +6,7 @@ import Search from './Search';
 import Consulta from './Consulta';
 import FavoriteList from './FavoriteList';
 import Favoritos_Planes from './Favoritos_Planes';
+import Chatbot from './Chatbot';
 
 
 function DashBody() {
@@ -22,9 +23,11 @@ function DashBody() {
         setRightContent(<FavoriteList />);
     };
     const handleShowPlanes = () => {
-        setRightContent(<Favoritos_Planes />)
+        setRightContent(<Favoritos_Planes />);
     }
-
+    const handleShowChatbot = () => {
+        setRightContent(<Chatbot/>);
+    }
     return (
         <div className="dash-body">
             <LeftSide 
@@ -32,6 +35,7 @@ function DashBody() {
                 onShowSearch={handleShowSearch}
                 onShowFavoritos={handleShowFavoritos}
                 onShowPlanes={handleShowPlanes}
+                onShowChatbot={handleShowChatbot}
             />
             <RightSide content={rightContent} />
         </div>

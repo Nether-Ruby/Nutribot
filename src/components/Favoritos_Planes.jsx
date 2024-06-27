@@ -43,6 +43,7 @@ const Favoritos_Planes = () => {
           (mealPlan) => mealPlan._id !== mealPlanId
         );
         setMealPlans(updatedMealPlans);
+        alert("El plan ha sido eliminado")
       }
     } catch (error) {
       console.error("Error eliminando el plan de comida:", error);

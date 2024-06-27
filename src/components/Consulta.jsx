@@ -14,15 +14,15 @@ const Consulta = () => {
   const [meals, setMeals] = useState([]);
 
   const handleMeals = async () => {
-    let endpoint = `${SPOONACULAR_ENDPOINT_MEALPLANNER}${SPOONACULAR_KEY}&timeFrame=day;`
+    let endpoint = `${SPOONACULAR_ENDPOINT_MEALPLANNER}${SPOONACULAR_KEY}&timeFrame=day`
     if (calorias !== "") {
-      endpoint += `&targetCalories=${calorias};`
+      endpoint += `&targetCalories=${calorias}`
     }
     if (dieta !== "") {
-      endpoint += `&diet=${dieta};`
+      endpoint += `&diet=${dieta}`
     }
     if (exclusion !== "") {
-      endpoint += `&exclude=${exclusion};`
+      endpoint += `&exclude=${exclusion}`
     }
 
     try {

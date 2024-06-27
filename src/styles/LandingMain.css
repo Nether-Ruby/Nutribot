@@ -16,5 +16,6 @@
     position: absolute;
     top: 50vh;
     width: 50vw;
+    user-select: none;
     z-index: -1;
 }

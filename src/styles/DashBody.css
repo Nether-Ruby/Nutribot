@@ -4,6 +4,7 @@
   flex-grow: 1; /* Permite que DashBody ocupe el espacio restante entre header y footer */
   margin-top: 10vh; /* Altura del header */
   margin-bottom: 5vh; /* Altura del footer */
+  background-color: rgb(110, 240, 168);
 }
 
 .left-side,
@@ -12,13 +13,15 @@
 }
 /*LEFT*/
 .left-side {
-  background-color: #f0f0f0; /* Color de fondo para el lado izquierdo */
+  background-color: mediumspringgreen; /* Color de fondo para el lado izquierdo */
   width: 25%;
 }
 .left-bttn {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background-color: wheat;
+
 }
 .no-margins{
   margin: 0px;
@@ -28,14 +31,14 @@
   font-size: 16px;
   cursor: pointer;
   border: none;
-  background-color: #2cb16e;
-  color: white;
+  background-color: wheat;
+  color: black;
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
 /*RIGHT*/
 .right-side {
-  background-color: #a8cc8f; /* Color de fondo para el lado derecho */
+  /* Color de fondo para el lado derecho */
   width: 90%;
 }
 .right-side-container {
